@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.loader {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #333;
+  animation: move 0.8s infinite ease-in-out;
+  transform-origin: center;
+}
+
+.d1 {
+  animation-delay: 0s;
+}
+
+.d2 {
+  animation-delay: 0.15s;
+}
+
+.d3 {
+  animation-delay: 0.3s;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-18px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
