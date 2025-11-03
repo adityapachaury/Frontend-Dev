@@ -1,0 +1,129 @@
+
+:root {
+  --accent: rgba(37, 99, 235, 0.9);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8fafc;
+  color: #0b1220;
+}
+
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background: var(--accent);
+  color: white;
+  padding: 0.9rem 1rem;
+  font-weight: 700;
+}
+
+
+.hero {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(2, 6, 23, 0.35), rgba(2, 6, 23, 0.05)), url('img1.svg');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  color: white;
+  font-size: 2.2rem;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.services {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.service {
+  flex: 1;
+  padding: 1rem;
+  background: white;
+  border: 1px solid rgba(11, 18, 32, 0.04);
+  box-shadow: 0 8px 24px rgba(2, 6, 23, 0.06);
+  border-radius: 8px;
+}
+
+.contact form {
+  padding: 1rem;
+  margin: 1rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px dashed rgba(11, 18, 32, 0.04);
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #e6e9ef;
+  border-radius: 6px;
+  outline: none;
+}
+
+.contact button {
+  padding: 0.6rem 1rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+
+.services .service:first-child {
+  position: relative;
+}
+
+.services .service:first-child::after {
+  content: 'Popular';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #f59e0b;
+  padding: 0.25rem .5rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: white;
+}
+
+
+@media (max-width:800px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+}

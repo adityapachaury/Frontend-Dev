@@ -1,0 +1,51 @@
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  margin: 2rem;
+  color: #0b1220;
+  background: #fff;
+}
+
+.post header h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.meta {
+  color: #6b7280;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+
+.content p {
+  margin: 1.25rem 0;
+  text-align: justify;
+}
+
+
+.content p::first-letter {
+  font-size: 2.4rem;
+  float: left;
+  line-height: 1;
+  margin-right: 0.35rem;
+  font-weight: 700;
+}
+
+.content p::first-line {
+  font-weight: 700;
+}
+
+mark {
+  background-color: #fde68a;
+  padding: 0.05em 0.15em;
+  border-radius: 2px;
+}
+
+
+blockquote {
+  border-left: 6px solid #f59e0b;
+  background: #fffbf0;
+  padding: 1rem;
+  margin: 1.25rem 0;
+}
